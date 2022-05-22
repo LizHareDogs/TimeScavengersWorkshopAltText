@@ -1,0 +1,62 @@
+# brittleStars
+
+A phylogenetic tree of the brittle stars, mapped with the shape of their arms and their life-style, too. 
+
+The lifestyles are: epizoic (epi), endozoic (endo, epiphytic (epi-p), and free living (free). The shapes of the arm are: saddle- shaped, universal type, or comb-shaped. 
+
+Neither the life styles or the arm shapes are phylogenetically controlled- meaning, the shapes or life styles are limited to a specific group. 
+
+Many of the tips of the trees are not labeled with species names. 
+The tree relationships are: 
+Everything belongs to the Ophintegrida or Euryophiurida 
+
+Ophintegrida breaks into Amphilipidelia and 
+Ophiomenitida as sister group (meaning, they are most closely related to one another on this tree). 
+
+
+Within Amphilipidelia: 
+All four taxa are contained within broader grouping of Ophiotrichidae. 
+Ophiothela venusta (saddle-shaped) and Ophiothela (danae?) (universal type) share a sister group (both epi). Sister to this grouping is Ophiothrix savignyi (free/ epi and universal type) and Macrophiothrix hirsuta (free and comb shape)- these two share a sister relationship. 
+
+Within Ophiomenitida: The two named clades that share a sister relationship are Ophiocomidae and Ophiocamacidae. Within Ophiocomidae, there is one species, Ophioxamax vitrea (free, saddle shape). Within  Ophiocomidae, there are two that share a sister relationship:  Ophiocoma scolopendrina (free, universal) and Ophiocomella sexradia (epi-p, universal type). 
+
+
+Ophiotrichidae shares a sister group with Ophiactidae. Within this group, two taxa appear- Ophioctis modesta (end, comb- shape) and Ophiactis savignyi (endo, epic, universal). 
+
+
+Euryophiurida splits into Ophuirida and Eurypalida. Ophuirida contains one named group, the Ophiuridae that contains Ophiura sarsii (free, universal). Eurypalida also contains one named group, Asteromychidae that contains Asteronyx loveni (epi, saddle). 
+
+### Diversity Through Time
+
+A graph marking diversity through time. 
+X axis: geologic time 
+y axis: number of marine families 
+
+The x asix spans from the Ediacaran to the Tertiary with the periods marked. Eons marked below. The Cambrian phase is marked, ending in Cambrian. Paleozoic phase stretches from Ordovician to Permian. Mesozoic- Cenozoic phase stretches from Triassic to Tertiary. 
+
+Diversity starts low- first big jump occuurs in Cambrian but a larger one occurs during Ordovician. The highest point in the Paleozoic reaches in Ordovician and stays there, except for the 2 major extinctions marked. At the Permian- Triassic, there is a large decrease, and it increases steadily to the end of the graph, except for extinction events. 
+
+Each of the major mass extinctions are marked (5). 0 is marked as an extinction of Ediacaran biota (but there is no decrease in diversity- this is hypothesized, but not clear what occured). 
+1: extinction at end of Ordovician. 2: Devonian extinction. 3: Permian extinction. 4: Triassic. 5: Cretaceous. 
+
+
+
+### Oceanic Conditions
+
+a)	Top left, Pre-PETM setting: regular oceanic conditions for marine life above the oxygen minimum zone (OMZ).
+b)	Top right, During peak PETM: shallow marine migrating upslope for survival. Deep low oxygen species also moving upslope and separating from their fellow deep marine species that are adapted to low oxygen.
+c)	Bottom left, Recovery phase I: Species that survived the PETM returning to pre-event locale above OMZ.
+d)	Bottom Right, Recovery phase II: Mixing of potentially new warm adapted species and shallow marine species. 
+
+
+### GulfOfMexico
+
+Gulf of Mexico ocean anoxia models. Four models (present on left, future on right) that show modeling results. Model has a number of variables (depth in m, 0 to -100; ph ranging from 7.2-8; latitude ranging from 30.5- 28; longitude ranging from -94 to -89; oxygen from 0-200 mmol m^3). 
+Between present and future, models show that pH in oceans and oxygen levels in ocean will be changing- the zones of oxygenation will change, too.
+
+### SearchDog
+
+1. A yellow dog with dark eyebrows and muzzle (possibly an Alsatian?) edges peers down through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind.
+
+
+2. A yellow dog with dark eyebrows and muzzle edges peers down at the camera from above, through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind. Sunlight slants in across the dark slats at a steep angle. The ends of more pieces of wood are visible behind the dog. (Is this a SAR scenario?)
