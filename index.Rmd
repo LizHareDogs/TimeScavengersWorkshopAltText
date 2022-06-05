@@ -1,9 +1,9 @@
 ---
-title: "Presentation Title"
-subtitle: "Conference Name"
+title: "Communicating Science Through Meaningful Alt-Text"
+subtitle: "TimeScavengers Internship Program"
 authors: "Liz Hare, PhD"
 institute: ""
-date: "October 1, 2021"
+date: "June 16, 2022"
 output: 
   xaringan::moon_reader:
     seal: false # false removes YAML title slide
@@ -21,14 +21,14 @@ output:
 library(metathis)
 meta() %>%
   meta_general(
-    description = "Presentation Title",
+    description = "Communicating Science Through Meaningful Alt-Text",
     generator = "xaringan and remark.js"
   ) %>% 
   # GitHub repo housing the slides for the talk
-  meta_name("github-repo" = "LizHareDogs/ConferenceTalkRepo") %>%
+  meta_name("github-repo" = "LizHareDogs/TimeScavengersWorkshopAltText") %>%
   # metadata for the social card that appears when you share the link on social media
   meta_social(
-    title = "2021 Conference Name | Liz Hare, PhD",
+    title = "2022 TimeScavengers Workshop | Liz Hare, PhD",
     url = "slide url",
     image = "coverImageSlide.png",
     image_alt = "",
@@ -113,7 +113,7 @@ knitr::opts_chunk$set(collapse = TRUE,
 
 
 ```{r data-import}
-lemurs <- readRDS("data/lemurs.rds")
+## lemurs <- readRDS("data/lemurs.rds")
 ```
 
 class: bottom, title
@@ -132,8 +132,8 @@ background-size: 200px
 class: middle, center
 
 <img style="border-radius: 50%;" 
-src="img/Profile_LH.jpg"
-alt=""
+src="img/ben2.jpg"
+alt="DogGenetics logo: a simplified yellow Labrador Retriever head appears to be made of layers of paper"
 width="250px"
 />
 
@@ -144,159 +144,388 @@ width="250px"
 [`r fa("github", a11y="sem")` @LizHareDogs](https://github.com/LizHareDogs)<br>
 [`r fa("envelope", a11y="sem")` LizHare@DogGenetics.com](mailto:LizHare@DogGenetics.com)
 
-???
-Hello! My name is Liz Hare and I'm a Canine Genetics and Genomics Consultant.
 
-This slide uses:
-- the `inverse`, `middle`, and `center` slide classes
-- an image inserted with html
-
----
-background-image: url(img/avahi-cleesei.jpg)
-background-position: 150%, 50%
-background-size: contain
 
 .pull-left[
-# The Avahi cleesei lemur
 
-> A species of woolly lemur native to western Madagascar, [with] brown skin with white regions on the rear and inside of the thighs and has a short damp nose, large plate eyes, and ears which hardly stand out from the skin.
-
-
-.footnote[
-- Original source: [Bemahara woolly lemur | Wikipedia](https://en.wikipedia.org/wiki/Bemaraha_woolly_lemur)
-- Illustration by [Rachel Hudson](https://lemur.duke.edu/100-lemurs/)
-] <!--end of footnote-->
 
 ] <!--end of pull left -->
 
-???
-This slide uses:
-- a background image
-- the `.pull-left[]` class
-- a horizontal bar
-- the `.footnote[]` class
-- bullet list with `*`
-- quotes with `>`
 ---
 
-.left-column[
-# Making lists
-] <!--end of left column -->
+# Today's Topics
 
-.right-column[
-Some facts about **lemurs**
+- What is alt-text?
+- Alt-text for Photos
+- Alt-text for Graphs
+- Alt-text for other data Visualizations
+- Automated alt-text is insufficient
+- Other aspects of accessibility (#a11y)
 
-1. Lemurs are considered _living fossils_ because they provide key clues about primate evolution
+---
 
-1. Lemurs are endemic to only Madagascar
+# Alt-text: What It Is
 
-1. 95% of lemur species are at risk of extinction
+- Attached to images to provide a description for people who use screen reading software.
+- Required to adhere to accessibility laws
+- Crucial to make sure your science communication reaches everyone  
 
+There are blind, low vision, and neurodivergent people in the general population, 
+and there are blind scientists, even though we have not been visible.
+---
+
+# Alt-text: What It Does
+
+Answers "Why was this image included?"
+
+Examples: 
+- It shows the relationship between X and Y in a graph
+- It shows what a plant looks like
+- It shows COVID-19 incidences on a map
+
+
+---
+
+
+
+# Alt-Text: What It Isn't
+
+- The title
+- The caption
+- Axis labels on a graph
+- A humorous remark
+
+These will usually not answer these questions:  
+- "Why am I including this data visualization?"
+- "What are the data saying?"
 
 .footnote[
-----
-Original source: [Duke Lemur Center](https://lemur.duke.edu/protect/overview-madagascar-conservation-programs/)
-] <!--end of footnote-->
+Humor is allowed, but it shouldn't obscure the message conveyed by the image
+]
+---
 
-] <!--end of right column -->
+# Where is alt-text?
 
-???
-This slide uses:
-- numbered list with `1.`
-- a horizontal bar
-- the `.footnote[]` class
+
+Started in [HTML code](https://en.wikipedia.org/wiki/Alt_attribute).  
+
+Now appears in places like:  
+- [MS Office](https://support.microsoft.com/en-us/office/add-alternative-text-to-a-shape-picture-chart-smartart-graphic-or-other-object-44989b2a-903c-4d9a-b742-6a75b451c669)
+- PDFs created with Office
+- [PDFs created with Adobe Acrobat](https://csuf.screenstepslive.com/s/12867/m/96806/l/1474315-alt-text-for-images-in-adobe-acrobat-pdf)
+- [Twitter posts](https://help.twitter.com/en/using-twitter/picture-descriptions)  
+- [Facebook posts](https://www.perkinselearning.org/technology/blog/how-add-alt-text-facebook-page)  
+
+.footnote[
+Follow links for instructions
+]
 
 ---
-# Inserting images
+
+# Missing Alt-Text Infrastructure?  
+
 
 .pull-left[
+Places without alt-text infrastructure  
 
-### Lemurs are endemic to only Madagascar
+- academic journals
+- books
+- magazines  
+- software that help you create websites and blogs
+]
+
+.pull-right[
+Workarounds  
+
+- Provide descriptions in text, e.g. describe graphed relationship in Results section of a paper.
+- Provide text descriptions of images as supplementary material when submitting to an academic journal.
+- Use replies or comments in social media if you've forgotten alt-text
+- Provide tables and/or raw data for data visualizations
+]
+
+---
+
+# Alt-Text: How Long Is It?
+
+*It depends!*  
+- context  
+- complexity  
+
+Dr. Sheffield's examples in this presentation are too long by many standards, but they are perfect to convey the meanings of the images!
+
+Use your judgement even though
+- Some media have character limits for alt-text
+- Too many guidelines emphasize brevity
+- One or two sentences won't be enough for many data visualizations
+
+---
+
+# Alt-Text for Photos
+
+- Context
+- Perspective
+- Foreground object(s)?
+    - Shape
+	- Color
+	
+Dr. Sheffield's dog alt-texts sound like:  
+
+"A cream colored dog with a brown ear snuggles under a blanket. Her tongue is sticking out slightly."
+
+Can you see why this is so much better than "My dog is adorable?"
+
+---
+
+# Context/Perspective Example 1
+
+Alt-text iteration 1:  
+
+"A yellow dog with dark eyebrows and muzzle (possibly an German Shepherd?) edges peers down through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind.
+
+---
+
+# Context/Perspective Example 1
+
+.pull-left[
+Alt-text iteration 2:
+
+A yellow dog with dark eyebrows and muzzle edges peers down at the camera from above, through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind. Sunlight slants in across the dark slats at a steep angle. The ends of more pieces of wood are visible behind the dog. (Is this a SAR scenario?)
+]
+
+.pull-right[
+``` {r, pointyFind, fig.alt="A yellow dog with dark eyebrows and muzzle edges peers down at the camera from above, through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind. Sunlight slants in across the dark slats at a steep angle. The ends of more pieces of wood are visible behind the dog. (Is this a SAR scenario?)", out.width="90%"}
+knitr::include_graphics("img/CANTF3ontarioCanine.jpg")
+```
+]
+
+---
+
+
+# Alt-Text For Data Visualization
+
+Ingredients:
+1. What kind of visualization is it (line graph, scatter plot, bar chart...?)
+2. What variables are on the axes?
+3. What is the scale of the data?
+4. What relationship between variables does the data visualization show?
+
+Opinion: Don't waste my time with 1-3 if you aren't going to include 4. While some automatic
+alt-text processes mine some of this information (e.g. R's ggplot2), I don't want to spend time with the metadata if I can't find out what the graph says.
+
+
+---
+
+# Link to the Data
+
+Providing a link to the data set and/or an HTML-formatted data table allows the user to explore the data on their own.
+
+Examples:
+- COVID-19 incidence map by zip code with a table where the user can look up incidence by zip code
+- A line graph accompanied by a data set allows the user to explore statistics like mean, median,
+minimum, maximum, slope
+
+---
+
+# Data Visualization Example 1
+
+Dr. Sheffield covering all the ingredients!   
+
+.pull-left[
+A graph marking diversity through time.  
+
+X axis: geologic time   
+
+y axis: number of marine families.   
+
+The x axis spans from the Ediacaran to the Tertiary with the periods marked. Eons marked below. The Cambrian phase is marked, ending in Cambrian. Paleozoic phase stretches from Ordovician to Permian. Mesozoic- Cenozoic phase stretches from Triassic to Tertiary.   
+]
+
+.pull-right[
+Diversity starts low- first big jump occuurs in Cambrian but a larger one occurs during Ordovician. The highest point in the Paleozoic reaches in Ordovician and stays there, except for the 2 major extinctions marked. At the Permian- Triassic, there is a large decrease, and it increases steadily to the end of the graph, except for extinction events.    
+
+Each of the major mass extinctions are marked (5). 0 is marked as an extinction of Ediacaran biota (but there is no decrease in diversity- this is hypothesized, but not clear what occured). 
+1: extinction at end of Ordovician. 2: Devonian extinction. 3: Permian extinction. 4: Triassic. 5: Cretaceous.   
+]
+
+---
+
+# Data Visualization Example 1 Graph
+
+```{r, diversityTime, fig.alt="A graph marking diversity through time. X axis: geologic time. y axis: number of marine families. The x asix spans from the Ediacaran to the Tertiary with the periods marked. Eons marked below. The Cambrian phase is marked, ending in Cambrian. Paleozoic phase stretches from Ordovician to Permian. Mesozoic- Cenozoic phase stretches from Triassic to Tertiary. Diversity starts low- first big jump occuurs in Cambrian but a larger one occurs during Ordovician. The highest point in the Paleozoic reaches in Ordovician and stays there, except for the 2 major extinctions marked. At the Permian- Triassic, there is a large decrease, and it increases steadily to the end of the graph, except for extinction events.  Each of the major mass extinctions are marked (5). 0 is marked as an extinction of Ediacaran biota (but there is no decrease in diversity- this is hypothesized, but not clear what occured). 1: extinction at end of Ordovician. 2: Devonian extinction. 3: Permian extinction. 4: Triassic. 5: Cretaceous.", out.width="50%"}
+knitr::include_graphics("img/diversityThroughTime.jpg")
+```
 
 .footnote[
-Image from [Odyssey Travels](https://www.odyssey-travels.com/site/assets/maps/positive/madagascar.png)
-] <!--end of footnote -->
+Graph from Sarah Sheffield
+]
 
-] <!--end of pull left-->
+---
+
+# Data Visualization Example 2: Phylogenetic Tree
+
+```{r, phylogenetic, fig.alt = "A phynlogenetic tree of the brittle stars, mapped with the shape of their arms and their life-style, too. The lifestyles are: epizoic (epi), endozoic (endo, epiphytic (epi-p), and free living (free). The shapes of the arm are: saddle- shaped, universal type, or comb-shaped. Neither the life styles or the arm shapes are phylogenetically controlled- meaning, the shapes or life styles are limited to a specific group.  Many of the tips of the trees are not labeled with species names.  The tree relationships are:  Everything belongs to the Ophintegrida or Euryophiurida  Ophintegrida breaks into Amphilipidelia and Ophiomenitida as sister group (meaning, they are most closely related to one another on this tree).  Within Amphilipidelia:  All four taxa are contained within broader grouping of Ophiotrichidae.  Ophiothela venusta (saddle-shaped) and Ophiothela (danae?) (universal type) share a sister group (both epi). Sister to this grouping is Ophiothrix savignyi (free/ epi and universal type) and Macrophiothrix hirsuta (free and comb shape)- these two share a sister relationship.  Within Ophiomenitida: The two named clades that share a sister relationship are Ophiocomidae and Ophiocamacidae. Within Ophiocomidae, there is one species, Ophioxamax vitrea (free, saddle shape). Within  Ophiocomidae, there are two that share a sister relationship:  Ophiocoma scolopendrina (free, universal) and Ophiocomella sexradia (epi-p, universal type). Ophiotrichidae shares a sister group with Ophiactidae. Within this group, two taxa appear- Ophioctis modesta (end, comb- shape) and Ophiactis savignyi (endo, epic, universal). Euryophiurida splits into Ophuirida and Eurypalida. Ophuirida contains one named group, the Ophiuridae that contains Ophiura sarsii (free, universal). Eurypalida also contains one named group, Asteromychidae that contains Asteronyx loveni (epi, saddle).", out.width="60%"} 
+knitr::include_graphics("img/brittleStars.jpg")
+```
+
+.footnote[
+Graph from Sarah Sheffield
+]
+
+---
+
+# Data Visualization Example 2: Phylogenetic Tree
+
+## Strategy
+
+- Learn the vocabulary used in this kind of research (tree, branch, leaf, node)
+- List categories of data (lifestyle and arm shapes)
+    - Amount of information depends on whether terms are defined in accompanying text
+- Work from most general to most specific
+    - this provides context that is useful for comprehension
+	
+---
+	
+	# Data Visualization Example 2: Phylogenetic Tree
+	
+	Dr. Sheffield's alt-text
+
+.pull-left[
+A phylogenetic tree of the brittle stars, mapped with the shape of their arms and their life-style, too.   
+
+The lifestyles are: epizoic (epi), endozoic (endo, epiphytic (epi-p), and free living (free). The shapes of the arm are: saddle- shaped, universal type, or comb-shaped.   
+
+Neither the life styles or the arm shapes are phylogenetically controlled- meaning, the shapes or life styles are limited to a specific group.     
+
+Many of the tips of the trees are not labeled with species names. 
+
+The tree relationships are:   
+
+Everything belongs to the Ophintegrida or Euryophiurida 
+]
+
+.pull-right[
+Ophintegrida breaks into Amphilipidelia and 
+Ophiomenitida as sister group (meaning, they are most closely related to one another on this tree).  
+
+Within Amphilipidelia: 
+All four taxa are contained within broader grouping of Ophiotrichidae. 
+Ophiothela venusta (saddle-shaped) and Ophiothela (danae?) (universal type) share a sister group (both epi). Sister to this grouping is Ophiothrix savignyi (free/ epi and universal type) and Macrophiothrix hirsuta (free and comb shape)- these two share a sister relationship. 
+
+Within Ophiomenitida: The two named clades that share a sister relationship are Ophiocomidae and Ophiocamacidae. Within Ophiocomidae, there is one species, Ophioxamax vitrea (free, saddle shape). Within  Ophiocomidae, there are two that share a sister relationship:  Ophiocoma scolopendrina (free, universal) and Ophiocomella sexradia (epi-p, universal type).   
+
+Ophiotrichidae shares a sister group with Ophiactidae. Within this group, two taxa appear- Ophioctis modesta (end, comb- shape) and Ophiactis savignyi (endo, epic, universal).   
+
+
+Euryophiurida splits into Ophuirida and Eurypalida. Ophuirida contains one named group, the Ophiuridae that contains Ophiura sarsii (free, universal). Eurypalida also contains one named group, Asteromychidae that contains Asteronyx loveni (epi, saddle). 
+s
+]
+
+
+---
+
+# Level Up! Other Kinds of Data Visualizations
+
+## Diagrams and Infographics
+
+These are more challenging to describe
+
+- Provide general context
+    - What kind of information?
+	- Is it a display of data, a process, etc?
+- Processes like flow charts can use a similar strategy to phylogenetic trees
+- Is the image subdivided (see next slide with sections a-d)
+
+---
+
+# Diagram/Infographic 1
+
+.pull-left[
+Dr. Sheffield's Alt-Text:  
+
+a)	Top left, Pre-PETM setting: regular oceanic conditions for marine life above the oxygen minimum zone (OMZ).  
+
+b)	Top right, During peak PETM: shallow marine migrating upslope for survival. Deep low oxygen species also moving upslope and separating from their fellow deep marine species that are adapted to low oxygen.  
+
+c)	Bottom left, Recovery phase I: Species that survived the PETM returning to pre-event locale above OMZ.  
+
+d)	Bottom Right, Recovery phase II: Mixing of potentially new warm adapted species and shallow marine species. 
+]
 
 .pull-right[
 
-<!-- the image below is inserted using simple Markdown but I don't recommend inserting this way because you don't have control over the size of the image. In this case it fits the width of the "pull right" container just fine but the bottom runs off of the bottom edge of the slide. Using knitr::include_graphics() gives us much more control -->
 
-![Illustrated map of Madagascar with the Bemahara National Park highlighted on the Western-Central region of the island](img/madagascar.png)
-
-] <!--end of pull right -->
-
-???
-This slide uses:
-- two different heading sizes: `#` and `##`
-- an image and accompanying alternative text inserted with `![]()`
-- `.pull-left[]` and `.pull-right[]` classes
-- the `.footnote[]` class
-
----
-# Tables
-
-The `lemur_data` dataset contains life histories for a variety of lemurs housed at the [Duke Lemur Center](https://lemur.duke.edu/about/history-mission/) in North Carolina, USA.
-
-<!-- this slide includes an HTML table with knitr::kable() and it takes up the entire width of the text area of the slide and ends right above the footnote -->
-
-```{r lemur-births, echo=FALSE}
-knitr::kable(head(lemurs[,1:8],5), format = 'html')
+``` {r, oceanicConditiomnns, fig.alt="a)	Top left, Pre-PETM setting: regular oceanic conditions for marine life above the oxygen minimum zone (OMZ). b)	Top right, During peak PETM: shallow marine migrating upslope for survival. Deep low oxygen species also moving upslope and separating from their fellow deep marine species that are adapted to low oxygen. c)	Bottom left, Recovery phase I: Species that survived the PETM returning to pre-event locale above OMZ. d)	Bottom Right, Recovery phase II: Mixing of potentially new warm adapted species and shallow marine species.", out.width="90%"}
+knitr::include_graphics("img/oceanicConditions.jpg")
 ```
 
 .footnote[
-Data source: [Duke Lemur Center Data | Kaggle](https://www.kaggle.com/jessemostipak/duke-lemur-center-data)
-] <!--end of footnote-->
+    Graph from Sarah Sheffield
+]
 
-???
-This slide uses:
-- an R code chunk to produce the HTML table
-- the `.footnote[]` class
+]
 
 ---
-# Highlighting code
 
-`> Inline code is differentiated by a monospace font face`
+# Diagram/Infographic 2
 
-You can highlight lines of code within code chunks using `#<<`. This adds a light gold background to the highlighted line of code, like to the `geom_histogram()` line in the example code chunk below:
+.pull-left[
+**Dr. Sheffield's alt-text:**  
 
-```r
-lemurs %>% filter(birth_type != "unknown") %>%
-  ggplot(aes(x = dob, fill = birth_type)) +
-  geom_histogram() +              #<<
-  minimal_theme()
+Gulf of Mexico ocean anoxia models. Four models (present on left, future on right) that show modeling results. Model has a number of variables (depth in m, 0 to -100; ph ranging from 7.2-8; latitude ranging from 30.5- 28; longitude ranging from -94 to -89; oxygen from 0-200 mmol m^3).   
+
+Between present and future, models show that pH in oceans and oxygen levels in ocean will be changing- the zones of oxygenation will change, too.  
+
+]
+
+.pull-right[
+**Question:**  
+
+Changing how?
+
+``` {r, gulfOfMexico, fig.alt="Gulf of Mexico ocean anoxia models. Four models (present on left, future on right) that show modeling results. Model has a number of variables (depth in m, 0 to -100; ph ranging from 7.2-8; latitude ranging from 30.5- 28; longitude ranging from -94 to -89; oxygen from 0-200 mmol m^3).  Between present and future, models show that pH in oceans and oxygen levels in ocean will be changing- the zones of oxygenation will change, too.", out.width="90%"}
+knitr::include_graphics("img/gulfOfMexico.png")
 ```
 
-???
-This slide uses:
-- inline code highlighting with backticks ` `` `
-- a code chunk to produce a ggplot
+.footnote[
+Graphic from Sarah Sheffield
+]
+
+]
+
 
 ---
 
-<!-- this slide creates a plot with a code chunk and that takes up the entire slide area -->
+# Summary
 
-```{r, eval=TRUE, echo=FALSE, fig.height=8, fig.width=14, fig.alt="Histogram of unique lemur births between 1975 and 2019 showing more births took place in captivity than in the wild, with most births concentrated between 1975 and 2000. Births in the wild peaked near 1985 at almost 300 births and again near 2012 at about 100 births. Births in captivity had a plateau between 1980 and 1985 at about 25 births"}
-lemurs %>% filter(birth_type != "unknown") %>%
-  ggplot(aes(x = dob, fill = birth_type)) +
-  geom_histogram() +
-  theme_minimal() +
-  # the following two xaringanthemer functions are only available for ggplot2, but they change the plot text and/or colors to match the xaringan theme
-  theme_xaringan() +
-  scale_xaringan_fill_discrete() 
-```
+- Understand your context  
+- Tell your reader the meaning the picture or visualization conveys  
+    - Ask yourself why you're including the data visualization in your media
+- Automatic alt-text is not complete, so write your own or edit
 
-???
-This slide uses:
-- a code chunk to produce a ggplot
-- code chunk option `fig.height = 8` and `fig.width = 14` to control the figure height and width
 
 ---
-class: middle, inverse
+
+# Other Aspects of Accessibility to COnsider
+
+- Use colors that can be distinguished by people with color blindness
+- Ensure sufficient contrast and text size 
+- Flashing, movement can trigger migraines and seizures
+- Avoid cognitive complexity
+- For web sites: ensure that if the image can be navigated (like a map), this can be done with the keyboard and not only with the mouse
+
+
+---
+
+
+
+
+class: middle, 
 
 .pull-left[
 # Thank you!
+
+Sarah Sheffield for invitation & sample graphics  
+Silvia Canelón for Xaringan/rmarkdown slide template
 
 ] <!--end of pull left -->
 
@@ -304,10 +533,11 @@ class: middle, inverse
 .right[
 <!--HTML code inserting a circular avatar of a square photo-->
 <img 
-src="img/Profile_LH.JPG" 
+src="img/ben2.jpg" 
 width="200px" 
 alt="Profile of Liz Hare"
-style="border-radius: 50%;"/>
+<--! style="border-radius: 50%;"/> -->
+<--! previous line commented out for square logo -->
 
 ## `r rmarkdown::metadata$author`
 
