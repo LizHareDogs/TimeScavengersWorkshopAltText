@@ -29,7 +29,7 @@ meta() %>%
   # metadata for the social card that appears when you share the link on social media
   meta_social(
     title = "2022 TimeScavengers Workshop | Liz Hare, PhD",
-    url = "slide url",
+    url = "",
     image = "coverImageSlide.png",
     image_alt = "",
     og_type = "website",
@@ -231,7 +231,7 @@ Places without alt-text infrastructure
 - academic journals
 - books
 - magazines  
-- software that help you create websites and blogs
+- software that helps you create websites and blogs
 ]
 
 .pull-right[
@@ -280,7 +280,7 @@ Can you see why this is so much better than "My dog is adorable?"
 
 Alt-text iteration 1:  
 
-"A yellow dog with dark eyebrows and muzzle (possibly an German Shepherd?) edges peers down through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind.
+"A yellow dog with dark eyebrows and muzzle (possibly a German Shepherd?) edges peers down through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind.
 
 ---
 
@@ -296,6 +296,10 @@ A yellow dog with dark eyebrows and muzzle edges peers down at the camera from a
 ``` {r, pointyFind, fig.alt="A yellow dog with dark eyebrows and muzzle edges peers down at the camera from above, through a crack between rough splintery slats (possibly a produce crate or pallet?) Most visible are the dark nostrils of the snout, and the brown eyes behind. Sunlight slants in across the dark slats at a steep angle. The ends of more pieces of wood are visible behind the dog. (Is this a SAR scenario?)", out.width="90%"}
 knitr::include_graphics("img/CANTF3ontarioCanine.jpg")
 ```
+.footnote[
+Photo from Tracy Darling, Penn Vet Working Dog Center
+]
+
 ]
 
 ---
@@ -306,7 +310,7 @@ knitr::include_graphics("img/CANTF3ontarioCanine.jpg")
 Ingredients:
 1. What kind of visualization is it (line graph, scatter plot, bar chart...?)
 2. What variables are on the axes?
-3. What is the scale of the data?
+3. What is the range of the data?
 4. What relationship between variables does the data visualization show?
 
 Opinion: Don't waste my time with 1-3 if you aren't going to include 4. While some automatic
@@ -356,7 +360,7 @@ knitr::include_graphics("img/diversityThroughTime.jpg")
 ```
 
 .footnote[
-Graph from Sarah Sheffield
+Sepkoski, J. J. (1978). A kinetic model of Phanerozoic taxonomic diversity I. Analysis of marine orders. Paleobiology, 4(3), 223-251.
 ]
 
 ---
@@ -368,7 +372,7 @@ knitr::include_graphics("img/brittleStars.jpg")
 ```
 
 .footnote[
-Graph from Sarah Sheffield
+Goharimanesh M, Ghassemzadeh F, De Kegel B, Van Hoorebeke L, Stöhr S, Mirshamsi O, Adriaens D. The evolutionary relationship between arm vertebrae shape and ecological lifestyle in brittle stars (Echinodermata: Ophiuroidea). Journal of anatomy. 2021 Dec 12.
 ]
 
 ---
@@ -459,7 +463,8 @@ knitr::include_graphics("img/oceanicConditions.jpg")
 ```
 
 .footnote[
-    Graph from Sarah Sheffield
+Tian SY, Yasuhara M, Huang HH, Condamine FL, Robinson MM. Shallow marine ecosystem collapse and recovery during the Paleocene-Eocene Thermal Maximum. Global and Planetary Change. 2021 Dec 1;207:103649.
+
 ]
 
 ]
@@ -487,7 +492,8 @@ knitr::include_graphics("img/gulfOfMexico.png")
 ```
 
 .footnote[
-Graphic from Sarah Sheffield
+Laurent, A., Fennel, K., Ko, D. S., & Lehrter, J. (2018). Climate change projected to exacerbate impacts of coastal eutrophication in the northern Gulf of Mexico. Journal of Geophysical Research: Oceans, 123(5), 3408–3426.
+
 ]
 
 ]
@@ -517,6 +523,13 @@ Graphic from Sarah Sheffield
 ---
 
 
+# Further Reading
+
+Canelón S, Hare E. (2021) Revealing room for improvement in accessibility within a social media data visualization learning community. csvConf2021 https://github.com/spcanelon/csvConf2021
+
+---
+
+
 
 
 class: middle, 
@@ -525,6 +538,7 @@ class: middle,
 # Thank you!
 
 Sarah Sheffield for invitation & sample graphics  
+Angela Baldo for dog alt-texts  
 Silvia Canelón for Xaringan/rmarkdown slide template
 
 ] <!--end of pull left -->
@@ -537,7 +551,7 @@ src="img/ben2.jpg"
 width="200px" 
 alt="Profile of Liz Hare"
 <--! style="border-radius: 50%;"/> -->
-<--! previous line commented out for square logo -->
+<!-- previous line commented out for square logo -->
 
 ## `r rmarkdown::metadata$author`
 
