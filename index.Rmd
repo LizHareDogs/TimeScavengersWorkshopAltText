@@ -1,6 +1,7 @@
 ---
 title: "Communicating Science Through Meaningful Alt-Text"
-subtitle: "TimeScavengers Internship Program"
+subtitle: "[Slides at: https://lizharedogs.github.io/TimeScavengersWorkshopAltText/index.html
+](https://lizharedogs.github.io/TimeScavengersWorkshopAltText/index.html)"
 authors: "Liz Hare, PhD"
 institute: ""
 date: "June 16, 2022"
@@ -29,7 +30,7 @@ meta() %>%
   # metadata for the social card that appears when you share the link on social media
   meta_social(
     title = "2022 TimeScavengers Workshop | Liz Hare, PhD",
-    url = "",
+    url = "https://lizharedogs.github.io/TimeScavengersWorkshopAltText/index.html",
     image = "coverImageSlide.png",
     image_alt = "",
     og_type = "website",
@@ -124,8 +125,7 @@ background-size: 200px
 <!-- this slide has the Dog Genetics, LLC logo in the top right corner, added using the "background" image classes above. The text begins on the bottom left corner of the slide -->
 
 # `r rmarkdown::metadata$title`
-## `r rmarkdown::metadata$subtitle`
-
+# `r rmarkdown::metadata$subtitle`
 ### `r rmarkdown::metadata$author`<br>@DogGeneticsLLC `r fa("twitter", a11y="sem")`
 
 ---
@@ -137,7 +137,8 @@ alt="DogGenetics logo: a simplified yellow Labrador Retriever head appears to be
 width="250px"
 />
 
-# `r rmarkdown::metadata$author` 
+
+## `r rmarkdown::metadata$author` 
 
 [`r fa("link", a11y="sem")` doggenetics.com](http://doggenetics.com/)<br>
 [`r fa("twitter", a11y="sem")` @DogGeneticsLLC](https://twitter.com/DogGeneticsLLC)<br>
@@ -159,7 +160,6 @@ width="250px"
 - Alt-text for Photos
 - Alt-text for Graphs
 - Alt-text for other data Visualizations
-- Automated alt-text is insufficient
 - Other aspects of accessibility (#a11y)
 
 ---
@@ -187,9 +187,9 @@ Examples:
 ---
 
 
-
 # Alt-Text: What It Isn't
 
+- **Automatically generated** by AI or text mining
 - The title
 - The caption
 - Axis labels on a graph
@@ -215,6 +215,7 @@ Now appears in places like:
 - [PDFs created with Adobe Acrobat](https://csuf.screenstepslive.com/s/12867/m/96806/l/1474315-alt-text-for-images-in-adobe-acrobat-pdf)
 - [Twitter posts](https://help.twitter.com/en/using-twitter/picture-descriptions)  
 - [Facebook posts](https://www.perkinselearning.org/technology/blog/how-add-alt-text-facebook-page)  
+- R markdown [documents](https://bookdown.org/yihui/rmarkdown/) and [slides](https://hugo-academic--silvia.netlify.app/2021-03-16-deploying-xaringan-slides/)
 
 .footnote[
 Follow links for instructions
@@ -498,6 +499,22 @@ Laurent, A., Fennel, K., Ko, D. S., & Lehrter, J. (2018). Climate change project
 
 ]
 
+
+---
+
+# Objectivity
+
+Report what you perceive about the data without judgement about what they mean.
+
+Don't   
+- make assumption about whether values are "good" or "bad"
+- express opinions about variables
+- judge whether a change is small or large (Jung et al, 2021)
+- conflate correlation with causation
+
+.footnote[
+Jung C, Mehta S, Kulkarni A, Zhao Y, Kim YS. Communicating Visualizations without Visuals: Investigation of Visualization Alternative Text for People with Visual Impairments. IEEE Transactions on Visualization and Computer Graphics. 2021 Sep 30;28(1):1095-105.
+]
 
 ---
 
