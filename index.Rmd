@@ -125,7 +125,7 @@ background-size: 200px
 <!-- this slide has the Dog Genetics, LLC logo in the top right corner, added using the "background" image classes above. The text begins on the bottom left corner of the slide -->
 
 # `r rmarkdown::metadata$title`
-# `r rmarkdown::metadata$subtitle`
+#### `r rmarkdown::metadata$subtitle`
 ### `r rmarkdown::metadata$author`<br>@DogGeneticsLLC `r fa("twitter", a11y="sem")`
 
 ---
@@ -268,7 +268,9 @@ Use your judgement even though
 - Foreground object(s)?
     - Shape
 	- Color
-	
+    - Activity
+	    - Expression
+
 Dr. Sheffield's dog alt-texts sound like:  
 
 "A cream colored dog with a brown ear snuggles under a blanket. Her tongue is sticking out slightly."
@@ -507,13 +509,15 @@ Laurent, A., Fennel, K., Ko, D. S., & Lehrter, J. (2018). Climate change project
 Report what you perceive about the data without judgement about what they mean.
 
 Don't   
-- make assumption about whether values are "good" or "bad"
-- express opinions about variables
+- make assumption about whether values are "good" or "bad" (Jung et al, 2021)  
+- express opinions about variables (Jung et al, 2021; Lundgard et al, 2021)
 - judge whether a change is small or large (Jung et al, 2021)
 - conflate correlation with causation
 
 .footnote[
 Jung C, Mehta S, Kulkarni A, Zhao Y, Kim YS. Communicating Visualizations without Visuals: Investigation of Visualization Alternative Text for People with Visual Impairments. IEEE Transactions on Visualization and Computer Graphics. 2021 Sep 30;28(1):1095-105.
+
+Lundgard A, Satyanarayan A. Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content. IEEE transactions on visualization and computer graphics. 2021 Sep 30;28(1):1073-83.
 ]
 
 ---
@@ -531,19 +535,25 @@ Jung C, Mehta S, Kulkarni A, Zhao Y, Kim YS. Communicating Visualizations withou
 # Other Aspects of Accessibility to COnsider
 
 - Use colors that can be distinguished by people with color blindness
-- Ensure sufficient contrast and text size 
+([WebAIM Visual Disabilities: Color Blindness](https://webaim.org/articles/visual/colorblind))
+- Ensure sufficient contrast and text size ([WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker))
 - Flashing, movement can trigger migraines and seizures
+([WebAIM Seizure and Vestibular Disorders](https://webaim.org/articles/seizure/))
 - Avoid cognitive complexity
+([Mozilla Cognitive Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Cognitive_accessibility))
 - For web sites: ensure that if the image can be navigated (like a map), this can be done with the keyboard and not only with the mouse
-
+([WebAIM Keyboard Accessibility](https://webaim.org/techniques/keyboard/))
 
 ---
 
 
 # Further Reading
 
-Canelón S, Hare E. (2021) Revealing room for improvement in accessibility within a social media data visualization learning community. csvConf2021 https://github.com/spcanelon/csvConf2021
+Canelón S, Hare E. (2021) Revealing room for improvement in accessibility within a social media data visualization learning community. csvConf2021 https://github.com/spcanelon/csvConf2021  
 
+Jung C, Mehta S, Kulkarni A, Zhao Y, Kim YS. Communicating Visualizations without Visuals: Investigation of Visualization Alternative Text for People with Visual Impairments. IEEE Transactions on Visualization and Computer Graphics. 2021 Sep 30;28(1):1095-105.  
+
+Lundgard A, Satyanarayan A. Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content. IEEE transactions on visualization and computer graphics. 2021 Sep 30;28(1):1073-83.
 ---
 
 
